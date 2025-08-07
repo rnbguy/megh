@@ -3,8 +3,11 @@ on:
   - workflow_dispatch
 
 jobs:
-  run:
+  ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - uses: mxschmitt/action-tmate@v3
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: mxschmitt/action-tmate@v3
