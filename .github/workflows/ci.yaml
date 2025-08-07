@@ -11,3 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: mxschmitt/action-tmate@v3
+  macos-15:
+    runs-on: macos-15
+    steps:
+      - uses: mxschmitt/action-tmate@v3
